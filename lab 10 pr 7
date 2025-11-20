@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    int *ptrA, *ptrB;
+
+    cin >> a >> b;
+    ptrA = &a;
+    ptrB = &b;
+
+    cout << (*ptrA) * (*ptrB);
+
+    return 0;
+}
