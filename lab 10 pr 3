@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    int *ptrA, *ptrB;
+
+    cout << "first integer a: ";
+    cin >> a;
+    cout << "second integer b: ";
+    cin >> b;
+
+    ptrA = &a;
+    ptrB = &b;
+
+    cout << "Value of a using pointer: " << *ptrA << endl;
+    cout << "Value of b using pointer: " << *ptrB << endl;
+
+    return 0;
+}
