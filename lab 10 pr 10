@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int *ptr, arr[5] = {1, 2, 3, 4, 5};
+    ptr = arr;
+    ptr = ptr + 1;
+
+    cout << "Pointer address: " << ptr
+         << " Pointer value: " << *ptr << endl;
+
+    cout << "&arr[0] = " << &arr[0] << endl;
+    cout << "&arr[1] = " << &arr[1] << endl;
+    cout << "&arr[2] = " << &arr[2] << endl;
+    cout << "&arr[3] = " << &arr[3] << endl;
+    cout << "&arr[4] = " << &arr[4] << endl;
+
+    return 0;
+}
