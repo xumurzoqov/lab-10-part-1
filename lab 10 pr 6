@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    int *ptrA, *ptrB;
+
+    cout << " first number: ";
+    cin >> a;
+    cout << " second number: ";
+    cin >> b;
+
+    ptrA = &a;
+    ptrB = &b;
+
+    int sum = *ptrA + *ptrB;
+
+    cout << "Sum : " << sum << endl;
+
+    return 0;
+}
