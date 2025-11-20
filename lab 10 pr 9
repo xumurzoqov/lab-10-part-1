@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c;
+    cin >> a >> b >> c;
+
+    int *p1 = &a, *p2 = &b, *p3 = &c;
+
+    int min_num = *p1;
+    if (*p2 < min_num) min_num = *p2;
+    if (*p3 < min_num) min_num = *p3;
+
+    cout << "Minimum number: " << min_num << endl;
+
+    return 0;
+}
