@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int *p1, *p2, *p3, i, j, sum;
+
+    cout << "Enter two integers : ";
+    cin >> i >> j;
+
+    if (i >= 100 || j >= 100 || i >= j) {
+        cout << "Invalid input!" << endl;
+        return 0;
+    }
+
+    p1 = &i;
+    p2 = &j;
+    p3 = &sum;
+
+    *p3 = 0;
+
+    for (int k = *p1 + 1; k < *p2; k++) {
+        *p3 += k;
+    }
+
+    cout << "Sum of integers between " << *p1 << " and " << *p2
+         << " is: " << *p3 << endl;
+
+    return 0;
+}
