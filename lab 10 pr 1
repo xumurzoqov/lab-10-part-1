@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x;
+    int *ptr;
+
+    cout << "Enter  number: ";
+    cin >> x;
+    ptr = &x;
+
+    cout << "Address of variable x: " << &x << endl;
+
+    return 0;
+}
