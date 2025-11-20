@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a;
+    int *ptr;
+
+    cout << "Enter a number: ";
+    cin >> a;
+
+    ptr = &a;
+
+    cout << "Address of variable x: " << &a << endl;
+    cout << "Address stored in pointer (address of a): " << ptr << endl;
+    cout << "Address of the pointer itself: " << &ptr << endl;
+
+    return 0;
+}
